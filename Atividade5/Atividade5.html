@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade5</title>
+    <Style>
+        :root {
+            --margin: 10px;
+        }
+
+        .titulo-box {
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+            height: 100px;
+            background-color: #03520a;
+            border: 1px solid white;
+            text-align: center;
+        }
+
+        .boxt {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            background-color: #03520a;
+            border-radius: 0px;
+            height: 20px;
+            border: 1px solid white;
+            width: calc((106%/5) - (var(--margin)* 2));
+            color: white;
+        }
+
+        .container-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .a {
+            width: calc((100%/3) - (var(--margin)* 2));
+        }
+
+        .b {
+            width: calc((100%/2) - (var(--margin)* 2));
+        }
+
+        .box {
+            background-color: #dddddd;
+            border-radius: 5px;
+            margin: var(--margin);
+            height: 200px;
+        }
+
+        .box img {
+            float: right;
+            border: 2px;
+            width: 200px;
+            height: 200px;
+            margin-right: 0px 10px;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="titulo-box" style="color: white; font-size: 80px">Jornal Sorocaba</div>
+    <div class="boxt">
+        <div class="button">Noticias</div>
+        <div class="button">Opiniões</div>
+        <div class="button">Esportes</div>
+        <div class="button">Cultura</div>
+        <div class="button">Mais</div>
+    </div>
+    
+    <div class="container-box">
+        <div class="box a">
+            <img src="https://f.i.uol.com.br/fotografia/2023/03/25/1679756403641f0c7317bcf_1679756403_3x2_lg.jpg"
+                alt="Imagem aérea de uma area inundada em Rio Branco">
+            <p style="color: rgb(3, 100, 32)">Com 27 mil afetados pela chuva, Rio Branco decreta emergência</p>
+            <p style="font-size: 12px">Decreto foi assinado nesta sexta-feira (24) na sede da prefeitura de Rio Branco.
+                Nível do Rio Acre segue em alta e marcou 16,06 metros na medição de 12h, são mais de dois metros acima
+                da cota de transbordo.</p>
+        </div>
+        <div class="box a">
+            <img src="https://medicinasa.com.br/wp-content/uploads/2021/03/medicos-networking-medica2.jpg"
+                alt="cinco médicos olhando e sorrindo para a camera">
+            <p style="color: rgb(3, 100, 32)">Mais médicos: bolsa de R$ 12,8 mil é competitiva? Veja salários e desafios
+            </p>
+            <p style="font-size: 12px">Especialistas avaliam que remuneração é compatível com a média do país, mas
+                destacam ainda outros pontos do programa como possíveis atrativos para contratação de médicos
+                brasileiros que são o foco do governo.</p>
+        </div>
+        <div class="box a">
+            <img src="https://s2.glbimg.com/C86AnD5TRlsdN1IjD4dhTLFNoFc=/0x0:7945x5231/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/L/t/xD7TtjQAmyRIz7SIAiEg/2023-03-17t153106z-1994433862-rc2rvz90iu8k-rtrmadp-3-ukraine-crisis-icc.jpg"
+                alt="Presidente Putin sentado em uma cadeira">
+            <p style="color: rgb(3, 100, 32)">Putin diz que vai posicionar armas nucleares táticas em Belarus</p>
+            <p style="font-size: 12px">Território é aliado da Rússia e fica situado às portas da União Europeia. É a
+                primeira vez desde a década de 1990 que país coloca armas nucleares fora de seu território.</p>
+        </div>
+        <div class="box b">
+            <img src="https://s2.glbimg.com/A_o-BFjpjFsjN3HQzI8opiovhDU=/0x0:2556x1716/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/T/e/DPvomGSauesHjtdMxBvQ/102341717-mariz-pa-brasilia-10-03-2023-luiz-inacio-lula-da-silva-lancamento-plataforma-maos-a-obra-r.jpg"
+                alt="Presidente Lula com a mão na boca">
+            <p style="color: rgb(3, 100, 32)">Com pneumonia, Lula cancela vaigem à China
+            <p>
+            <p style="font-size: 12px">Presidencia informa que marcara nova data, possuí pneumonia de natureza
+                bacteriana</p>
+        </div>
+        <div class="box b">
+            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/10/queda-aviao-texas.jpeg?w=1200&h=900&crop=1"
+                alt="Avião caido pegando fogo, cercado por bombeiros">
+            <p style="color: rgb(3, 100, 32)">Avião de pequeno porte cai e deixa feridos</p>
+            <p style="font-size: 12px">Aeronave com cinco pessoas caiu próximo a pista de pouso em Conceição do
+                Araguaia.</p>
+            <p style="font-size: 12px">Um avião de pequeno porte com cinco ocupantes caiu em Conceição do Araguaia , no
+                sudeste do Pará. A Polícia Militar do Pará informou neste sábado (25) que todos sobreviveram e foram
+                levados ao hospital.</p>
+        </div>
+    </div>
+</body>
+<footer>
+    <br>
+    <br>
+    <br>
+    Todas as noticias foram retiradas do G1. Links:
+    <ul>
+        <li><a
+                href="https://g1.globo.com/ac/acre/noticia/2023/03/24/com-27-mil-moradores-atingidos-por-alagacao-prefeitura-de-rio-branco-decreta-situacao-de-emergencia.ghtml">Alagamento
+                em Rio Branco</a></li>
+        <li><a
+                href="https://g1.globo.com/saude/noticia/2023/03/25/bolsa-de-r-128-mil-do-novo-mais-medicos-veja-cenario-salarial-do-pais-e-desafios-do-programa.ghtml">Mais
+                Médicos</a></li>
+        <li><a
+                href="https://g1.globo.com/mundo/noticia/2023/03/25/putin-diz-que-vai-posicionar-armas-nucleares-taticas-em-belarus.ghtml">Armas
+                nucleares em Belarus</a></li>
+        <li><a
+                href="https://g1.globo.com/globonews/jornal-globonews/video/com-pneumonia-lula-cancela-viagem-a-china-11479325.ghtml">Lula
+                com pneumonia</a></li>
+        <li><a
+                href="https://g1.globo.com/pa/para/noticia/2023/03/25/aviao-de-pequeno-porte-cai-no-para-e-deixa-feridos-diz-pm.ghtml">Queda
+                de avião</a></li>
+    </ul>
+</footer>
