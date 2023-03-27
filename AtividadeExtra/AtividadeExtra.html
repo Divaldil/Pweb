@@ -15,6 +15,11 @@
         @media screen and (max-width: 1920px) {
             .box {
                 background-color: yellow;
+                
+            }
+
+            .box h1::after{
+                content: "Amarelho";
             }
         }
 
@@ -22,11 +27,19 @@
             .box {
                 background-color: purple;
             }
+
+            .box h1::after{
+                content: "Roxo";
+            }
         }
 
         @media screen and (max-width: 1080px) {
             .box {
                 background-color: pink;
+            }
+
+            .box h1::after{
+                content: "Rosa";
             }
         }
 
@@ -34,11 +47,19 @@
             .box {
                 background-color: rgb(247, 32, 175);
             }
+
+            .box h1::after{
+                content: "Rosa-choque";
+            }
         }
 
         @media screen and (max-width: 768px) {
             .box {
                 background-color: orange;
+            }
+
+            .box h1::after{
+                content: "Laranja";
             }
         }
 
@@ -46,10 +67,16 @@
             .box {
                 background-color: darkslategray;
             }
+
+            .box h1::after{
+                content: "Cinza";
+            }
         }
     </style>
 </head>
 <body>
-    <div class="box"></div>
+    <div class="box">
+        <h1></h1>
+    </div>
 </body>
 </html>
