@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    function Pedra(){
+        input(1);
+    }
+
+    function Papel(){
+        input(2);
+    }
+
+    function Tesoura(){
+        input(3);
+    }
+
+    function Response(){
+        num = Math.random();
+        if(num <= 0.33){
+            choice = 1;
+            name = "Pedra";
+        }
+        if(num > 0.33 & num < 0.66){
+            choice = 2;
+            name = "Papel";
+        }
+        if(num >= 0.66){
+            choice = 3;
+            name = "Tesoura";
+        }
+    }
+
+    function input(value){
+        Response();
+
+        if(value == choice){
+            alert("EMPATE!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 1 & choice == 2){
+            alert("VOCÊ PERDEU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 2 & choice == 3){
+            alert("VOCÊ PERDEU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 3 & choice == 1){
+            alert("VOCÊ PERDEU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 1 & choice == 3){
+            alert("VOCÊ GANHOU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 2 & choice == 1){
+            alert("VOCÊ GANHOU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 3 & choice == 2){
+            alert("VOCÊ GANHOU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+    }
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="Pedra()">Pedra</button>
+        <button onclick="Papel()">Papel</button>
+        <button onclick="Tesoura()">Tesoura</button>
+    </div>
+</body>
+</html>
