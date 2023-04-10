@@ -1,84 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head >
-    <link rel="stylesheet" href="mystyle.css">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lei Geral de Proteção de Dados Pessoais (LGPD)</title>
+    <title>Document</title>
+    <style>
+        .bss {
+            border: 2px solid black;
+            background-color: beige;
+            margin-left: 500px;
+            margin-right: 570px;
+            margin-top: 250px;
+            padding: 30px;
+        }
+    </style>
+    <script>
+    function Pedra(){
+        input(1);
+    }
+
+    function Papel(){
+        input(2);
+    }
+
+    function Tesoura(){
+        input(3);
+    }
+
+    function Response(){
+        num = Math.random();
+        if(num <= 0.33){
+            choice = 1;
+            name = "Pedra";
+        }
+        if(num > 0.33 & num < 0.66){
+            choice = 2;
+            name = "Papel";
+        }
+        if(num >= 0.66){
+            choice = 3;
+            name = "Tesoura";
+        }
+    }
+
+    function input(value){
+        Response();
+
+        if(value == choice){
+            alert("EMPATE!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 1 & choice == 2){
+            alert("VOCÊ PERDEU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 2 & choice == 3){
+            alert("VOCÊ PERDEU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 3 & choice == 1){
+            alert("VOCÊ PERDEU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 1 & choice == 3){
+            alert("VOCÊ GANHOU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 2 & choice == 1){
+            alert("VOCÊ GANHOU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+        else if(value == 3 & choice == 2){
+            alert("VOCÊ GANHOU!!!");
+            alert("Escolha do Computador: " + name);
+        }
+    }
+    </script>
 </head>
-
-<body background="https://img.freepik.com/premium-vector/pattern-geometric-line-circle-abstract-seamless-blue-line_60284-53.jpg?w=2000">
-    <header>
-        <h1>Lei Geral de Proteção de Dados Pessoais (LGPD)</h1>
-        <br>
-    </header>
-<div style="background: #ffff; border: 1px solid #000;">
-    <section>
-        <h2>Introdução</h2>
-        <p>A Lei Geral de Proteção de Dados Pessoais (LGPD), tem como principal objetivo <strong>proteger</strong>
-            os direitos de privacidade de todos os indivíduos, através da regulamentação da forma em que os dados
-            pessoais são tratados.</p>
-        <p>.A lei tem efeito tanto no meio físico quanto no meio digital.</p>
-        <p>Os principais fundamentos da LGPD são:</p>
-        <ul>
-            <li>Respeito a privacidade;</li>
-            <li>Autodeterminação;</li>
-            <li>Liberdade de expressão, de informação, de comunicação e de opinião;</li>
-            <li>Inviolabilidade da intimidade, da honra e da imagem;</li>
-            <li>O desenvolvimento econômico e tecnológico e a inovação;</li>
-            <li>a livre iniciativa, a livre concorrência e a defesa do consumidor;</li>
-            <li>os direitos humanos, o livre desenvolvimento da personalidade, a dignidade e o exercício da cidadania
-                pelas pessoas naturais;</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Entendendo a Lei</h2>
-        <p>Uma parte focal da LGPD é sobre o tratamento de dados, que se refere a qualquer ação utilizando dados
-            pessoais,
-            como coletas, classificações, transmissões armazenamento, etc. Para poder iniciar o tratamento de dados é
-            preciso registrar e detalhar
-            o propósito da ação para o possuidor dos dados.</p>
-        <p>O tratamento de dados pode ser efetuado por 2 agentes, o Controlador e o Operador e 1 intermediário, o
-            Encarregado indicado pelo Controlador que tem o papel de facilitar a comunicação entre os envolvidos.</p>
-        <p>Outro ponto de destaque sobre a LGPD é o foco na transparência, pois para todos os dados coletados é preciso
-            informar com quem estes dados serão compartilhados. Para facilitar a proteção dos direitos e da privacidade
-            dos titulares,
-            a LGPD fornece um conjunto de ferramentas para facilitar esta atividade.</p>
-        <p>Além disso, a LGPD estabelece a necessidade de se pedir consentimento ao titular, o qual possui um certo
-            controle
-            sobre os seus dados. Uma definição clara para dados pessoais e penalidades para órgãos e entidades que não
-            manusearem o
-            tratamento de dados de maneira correta. A LGPD é aplicada para todas as organizações que realizam o
-            processamento de dados
-            em território nacional, independente de a sede desta organização estar em outro país ou não.</p>
-    </section>
-    <figure><img
-    src="https://www.hscbrasil.com.br/wp-content/uploads/2019/09/LGPD.png"
-    alt="Imagem escrita lgpd com cadeado" title="Imagem" width="250" height="150" style="margin-left: 530px;" /> </figure>
-    </figure>
-    <section>
-        <h2>Conclusão</h2>
-        <p>Enfim, fica evidente a importância da existência desta lei no contexto atual,
-            onde são processadas enormes quantidades de dados a todo o tempo, com muitos destes dados sendo de natureza sensível.
-            E como consequência desta quantidade volumosa de informações, os diversos possíveis riscos de segurança se tornam cada vez mais
-            perigosos, pois a quantidade de pessoas que podem ser afetadas pelos dados comprometidos aumenta a cada dia.</p>
-            <p> Logo, surge a necessidade de se criar uma lei para proteger os direitos de liberdade
-                de expressão e de privacidade dos cidadãos, estabelecendo punições para as entidades que não tomarem cuidado com
-                os dados de seus usuários, além de proporcionar ferramentas para auxiliar neste tipo de ação.</p>
-    </section>
-
-    <section>
-        <h3>Referências</h3>
-        <ul>
-            <li>Gov.br. Lei Geral de Proteção de Dados Pessoais (LGPD). Disponível em: <a href="https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd">https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd.</a> Acesso em 27/02/2023 às 12:23.</li>
-            <li>Presidência da República. LEI Nº 13.709, DE 14 DE AGOSTO DE 2018. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm</a>. Acesso em 27/02/2023 às 12:25.</li>
-            <li>Serpro. O que muda com a LGPD. Disponível em: <a href="https://www.serpro.gov.br/lgpd/menu/a-lgpd/o-que-muda-com-a-lgpd">https://www.serpro.gov.br/lgpd/menu/a-lgpd/o-que-muda-com-a-lgpd</a>. Acesso em 27/02/2023 às 16:36.</li>
-        </ul>
-    </section>
-</div>
+<body background="https://meus-projetos.com/wp-content/uploads/2022/03/pedra-papel-tesoura.png">
+    <div class="bss">
+        <button onclick="Pedra()">Pedra</button>
+        <button onclick="Papel()">Papel</button>
+        <button onclick="Tesoura()">Tesoura</button>
+    </div>
 </body>
-
 </html>
