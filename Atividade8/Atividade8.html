@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade8</title>
+</head>
+<body>
+    <script>
+        numMax = 5;
+        var idade = new Array(numMax);
+        var sexo = new Array(numMax);
+        var opiniao = new Array(numMax);
+        
+        for(i=0; i < numMax; i++){
+            idade[i] = parseInt(prompt("Digite a idade da pessoa " + (i+1)));
+            sexo[i] = prompt("Digite o sexo da pessoa " + (i+1));
+            opiniao[i] = parseInt(prompt("Digite a opinião da pessoa " + (i+1)));
+        }
+
+        function medIdade(){
+            var totIdade = 0;
+            for(i=0; i < numMax; i++){
+                totIdade += idade[i]; 
+            }
+            return (totIdade/numMax);
+        }
+
+        function maiorIdade(){
+            var maiorId = 0;
+            for(i=0; i < numMax; i++){
+                if(idade[i] > maiorId)
+                    maiorId = idade[i];
+            }
+            return (maiorId);
+        }
+
+        function menorIdade(){
+            var menorId = 999;
+            for(i=0; i < numMax; i++){
+                if(idade[i] < menorId)
+                    menorId = idade[i];
+            }
+            return (menorId);
+        }
+
+        function porcent(){
+            var qtdePos = 0;
+            var perc = 0;
+            for(i=0; i < numMax; i++){
+                if(opiniao[i] == 4 || opiniao[i] == 3)
+                    qtdePos += 1;
+            }
+            return((qtdePos*100)/numMax);
+        }
+
+        function quantPes(){
+            var qtdePes = 0;
+            for(i=0; i < numMax; i++){
+                if(opiniao[i] == 1)
+                    qtdePes += 1;
+            }
+            return (qtdePes);
+        }
+
+        function quantHomem(){
+            var qtdeHom = 0;
+            for(i=0; i < numMax; i++){
+                if(sexo[i] == 'M')
+                    qtdeHom += 1;
+            }
+            return (qtdeHom);
+        }
+
+        function quantMulher(){
+            var qtdeMul = 0;
+            for(i=0; i < numMax; i++){
+                if(sexo[i] == 'F')
+                    qtdeMul += 1;
+            }
+            return (qtdeMul);
+        }
+
+        alert("Média da idades: " + medIdade());
+        alert("Idade da pessoa mais velha: " + maiorIdade());
+        alert("Idade da pessoa mais nova: " + menorIdade());
+        alert("Pessoas que disseram péssimo: " + quantPes());
+        alert("Pessoas que disseram bom ou otimo " + porcent() +"%");
+        alert("Numero de homens: " + quantHomem() + " e mulheres: " + quantMulher());
+
+    </script>
+</body>
+</html>
