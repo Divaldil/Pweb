@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade10</title>
+</head>
+<body>
+    <script>
+        var aluno = new Object()
+            aluno.nome = "joao",
+            aluno.ra = "123456";
+        alert(`Ra= ${aluno.ra} nome= ${aluno.nome}`)
+
+        var aluno2 = {};
+        aluno2.ra = "1234";
+        aluno2.nome = "Matheus";
+        alert("ra= " + aluno2.ra + " nome= " + aluno2.nome);
+
+        var aluno3 = {
+            ra: "1234567",
+            nome:"Silva",
+        }
+        alert("ra=" + aluno3.ra + " nome=" + aluno3.nome);
+
+        function Aluno(ra, nome){
+            this.ra = ra;
+            this.nome = nome;
+
+            this.MostrarDados = function(){
+                return "ra="+this.ra+" nome="+this.nome;
+            }
+        }
+
+        var aluno4 = new Aluno("123","Lucas");
+        alert(aluno4.MostrarDados());
+        
+    </script>
+</body>
+</html>
