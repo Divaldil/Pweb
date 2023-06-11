@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+    background: url("images/upscaledredpattern.jpg");
+    background-size: cover;
+}
+
+.container2 {
+    padding: 0.5em;
+}
+#socials img{
+    opacity: 0.6;
+    border: solid black;
+    border-radius: 50%;
+    padding: 0.2em;
+    width: 3.5em;
+    height: 3.5em;
+    min-width: 2em;
+    min-height: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .container2 img{
+        width: 2em;
+        height: 2em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container2 img{
+        width: 1em;
+        height: 1em;
+    }
+}
+
+#r1 {
+    height: 34em;
+}
+
+#c1 {
+    color: rgb(245, 223, 184);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#nome {
+    font-family: 'Russo One', sans-serif;
+}
+
+.ling {
+    font-size: 1.1em;
+}
+
+#c2 {
+    border: solid rgb(34, 34, 34) 0.4em;
+    border-radius: 1em;
+    color: wheat;
+    background-color: rgb(43, 43, 43); 
+}
+
+#c2 img{
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.PI {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#nompi::before {
+    content: ' \25B6';
+}
+
+#nompi {
+    background: linear-gradient(to right, red, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrap {
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+}
+
+.imgserra {
+    text-align: center;
+    background-color: rgb(43, 43, 43);
+}
+
+.skills {
+    background-color: rgb(34, 34, 34);
+    border-radius: 1em;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+a:link {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
